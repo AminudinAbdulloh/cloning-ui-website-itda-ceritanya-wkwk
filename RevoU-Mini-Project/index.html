@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div id="logo">
+                <img src="assets/logo_RevoU.png" alt="logo">
+            </div>
+            <ul>
+                <li id="home-menu" class="menu"><a href="#banner">Home</a></li>
+                <li id="our-profile-menu" class="menu"><a href="#about">Our Profile</a></li>
+                <li id="achievement-menu" class="menu"><a href="">Achievement</a></li>
+                <li id="message-us-menu" class="menu"><a href="#message-us">Message Us</a></li>
+            </ul>
+            <div id="menu-toggle">
+                <input type="checkbox">
+                <span class="bar" id="bar1"></span>
+                <span class="bar" id="bar2"></span>
+                <span class="bar" id="bar3"></span>
+            </div>
+        </nav>
+
+        <section id="banner">
+            <div class="banner-img" id="slider">
+                <img class="img-slide" src="assets/ITDA1.png" alt="Image 2">
+                <img class="img-slide" src="assets/ITDA2.png" alt="Image 3">
+                <img class="img-slide" src="assets/ITDA3.png" alt="Image 1">
+            </div>
+            
+            <span class="slider-control" id="prevSlide">&#10094;</span>
+            <span class="slider-control" id="nextSlide">&#10095;</span>
+            
+            </div>
+            <div class="banner-text1 container">
+                <h1>Hi</h1>
+                <h1 id="namaPengunjung"></h1>
+                <h1>Welcome to website</h1>
+            </div>
+            <div class="banner-text2 container">
+                <p>Ini adalah website latihan pertama</p>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About</h2>
+            <p>Institut Teknologi Dirgantara Adisutjipto (ITDA) Yogyakarta merupakan salah satu Perguruan Tinggi Swasta (PTS) bernuansa Kedirgantaraan yang diselenggarakan oleh Yayasan TNI Angkatan Udara Adi Upaya (YASAU). 
+                Yasau sebagai badan hukum yang salah satu kegiatannya bergerak di bidang sosial dan pendidikan yang bersifat non-profit, sehingga biaya perkuliahan di Institut Teknologi Dirgantara Adisutjipto relatif lebih murah dan terjangkau oleh masyarakat tanpa mengorbankan kualitas pendidikan.
+            </p>
+        </section>
+
+        <section id="visi-misi" class="container">
+            <div id="visi">
+                <h2>Visi</h2>
+                <p>Menjadi Perguruan Tinggi yang berkualitas dalam mengembangkan Teknologi, Sains dan Kedirgantaraan serta mampu bersaing di Asia Tenggara.</p>
+            </div>
+            <div id="misi">
+                <h2>Misi</h2>
+                <p>Menjalankan Pendidikan, Penelitian, dan Pengabdian kepada Masyarakat Dalam Rangka Mengembangkan Teknologi, Sains dan Kedirgantaraan Yang Mampu Bersaing di Asia Tenggara</p>
+            </div>
+        </section>
+
+        <section id="our-facilitation" class="container">
+            <h1>Our Facilitation</h1>
+            <div class="row">
+                <div class="library">
+                    <img src="assets/perpustakaan.jpg" alt="Library">
+                    <p>Library</p>
+                </div>
+                <div class="practical-lab">
+                    <img src="assets/Lab-praktikum.jpg" alt="Practical Lab">
+                    <p>Practical Lab</p>
+                </div>
+                <div class="classroom">
+                    <img src="assets/classroom.jpg" alt="Classroom">
+                    <p>Classroom</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <h1>Message Us</h1>
+            <div id="message-us">
+                <form id="input">
+                    <div>
+                        <label for="">Nama :</label> 
+                        <input type="text" id="nama" placeholder="Nama">
+                    </div>
+                    <div>
+                        <label for="">Tanggal lahir :</label> 
+                        <input type="date" id="tanggalLahir">
+                    </div>
+                    <div>
+                        <label for="">Jenis kelamin : </label>
+                        <input type="radio" name="jenisKelamin" value="Laki-laki" id="lakiLaki" class="jenisKelamin"> Laki-laki
+                        <input type="radio" name="jenisKelamin" value="Perempuan" id="perempuan" class="jenisKelamin"> Perempuan
+                    </div>
+                    <div>
+                        <label for="">Pesan : </label>
+                        <input type="text" id="pesan" placeholder="Pesan">
+                    </div>
+                    <div>
+                        <button type="button" id="submit">Submit</button>
+                    </div>
+                </form>
+                <div id="output"></div>
+            </div>
+        </footer>
+
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

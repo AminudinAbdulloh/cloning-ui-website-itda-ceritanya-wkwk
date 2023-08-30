@@ -1,0 +1,441 @@
+    body {
+        font-family: sans-serif;
+        overflow-x: hidden;
+    }
+
+    * {
+        margin: 0;
+        padding: 0px;
+    }
+    
+    .navbar {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #094067;
+    }
+
+    ul {
+        display: flex;
+        margin-left: auto;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    ul .menu{
+        border: 2px solid #fffffe;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-bottom: 10px;
+        padding: 10px 10px;
+        text-align: center;
+        width: 90px;
+        height: 10px;
+        flex-direction: column; 
+        flex-grow: 1;  
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    li a {
+        color: #fffffe;
+    }
+
+    ul .menu:hover {
+        background-color: #3da9fc;
+        cursor: pointer;
+    }
+
+    ul .menu:active {
+        transform: translateY(2px);
+    }
+
+    #logo img {
+        width: 35px;
+        height: 35px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {    
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        color: #094067;
+    }
+
+    .banner-img {
+        display: flex;
+        height: 90.9vh;
+        filter: brightness(70%);
+    }
+
+    .slider-control {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 70px;
+        color: white;
+        user-select: none;
+        z-index: 1;
+    }
+
+    .slider-control:hover {
+        color: #3da9fc;
+    }
+
+    .slider-control:active {
+        font-size: 55px;
+    }
+
+    #prevSlide {
+        left: 10px;
+    }
+    
+    #nextSlide {
+        right: 10px;
+    }
+
+    .banner-text1 {
+        position: absolute;
+        top: 50px;
+    }
+
+    .banner-text2 {
+        position: absolute;
+        top: 100px;
+    }
+
+    .banner-text1 h1 {
+        color: white;
+    }
+
+    .banner-text2 p {
+        color: white;
+        margin-top: -12px;
+        font-size: 25px;
+    }
+
+    #banner div {
+        display: flex;
+        gap: 6px;
+    }
+
+    #about {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .container h2 {
+        color: #094067;
+    }
+
+    .container p {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    #about {
+        background-color: #d8eefe;
+        padding-bottom: 20px;
+    }
+
+    #visi-misi {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    #visi-misi {
+        background-color: #d8eefe;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .row {
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .row img {
+        border: 2px solid #094067;
+        border-radius: 100%;
+        height: 100px;
+        width: 100px;
+    }
+
+    footer {
+        background-color: #d8eefe;
+    }
+
+    #message-us {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 50px;
+        padding-bottom: 20px;
+        padding-right: 100px;
+    }
+
+    #input div{
+        display: flex;
+        padding: 10px 0px;
+    }
+
+    #input label {
+        font-weight: bold;
+    }
+
+    form #pesan {
+        scroll-behavior: auto;
+    }
+
+    #nama {
+        width: 60%;
+        height: 25px;
+        margin-left: 77px;
+    }
+
+    #tanggalLahir {
+        width: 60%;
+        height: 25px;
+        margin-left: 25px;
+    }
+
+    .jenisKelamin {
+        margin-left: 20px;
+    }
+
+    #pesan {
+        margin-left: 74px;
+        width: 60%;
+        height: 100px;
+    }
+
+    #input button {
+        width: 81.8%;
+        height: 30px;
+        border: 0px;
+        background-color: #094067;
+        color: white;
+    }
+
+    #input button:hover {
+        background-color: #3da9fc;
+    }
+
+    #input button:active {
+        transform: translateY(2px);
+    }
+
+    #output{
+        width: 100%;
+        height: 90%;
+        border: 2px solid #094067;
+        padding: 10px ;
+        overflow-y: auto;
+        word-wrap: break-word;
+    }
+
+    /* Responsive website */
+    @media screen and (max-width: 768px) {
+        #logo img {
+            margin-left: 0px;
+        }
+
+        nav ul {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 75%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #094067;
+            z-index: 1;
+            top: 50px;
+            transform: translateX(100%);
+            transition: all 1s;
+        }
+
+        ul .menu:hover {
+            background-color: transparent;
+            color: #3da9fc;      
+        }
+
+        ul .menu {
+            border: none;
+        }
+
+        #menu-toggle {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            justify-content: center;
+            left: 80%;
+            gap: 5px;
+            z-index: 1;
+        }
+
+        #menu-toggle input {
+            position: absolute;
+            height: 50px;
+            width: 40px;
+            right: 1px;
+            opacity: 0;
+        }
+
+        #menu-toggle input:hover {
+            cursor: pointer;
+        }
+        
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            transition: 0.3s;
+        }
+
+        .rotate-45 {
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .hide {
+            opacity: 0;
+        }
+
+        .rotate-135 {
+            transform: rotate(-135deg) translate(-3px, -1px);
+        }
+    
+        #banner {
+            height: 40vh;
+        }
+
+        .banner-img {
+            height: 40vh;
+        }
+
+        .banner-text1 {
+            flex-direction: column;
+        }
+
+        #namaPengunjung {
+            position: absolute;
+            left: 50px;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        .banner-text2 {
+            position: absolute;
+            margin-top: 30px;
+        }
+    
+        #banner h1 {
+            font-size: 30px;
+        }
+    
+        #banner p {
+            font-size: 18px;
+            margin-top: -8px;
+        }
+
+        .slider-control {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .slider-control:active {
+            font-size: 15px;
+        }
+
+        #about {
+            position: relative;
+        }
+
+        #visi-misi {
+            position: relative;
+        }
+    
+        .container {
+            padding: 20px;
+        }
+    
+        .container h1 {
+            font-size: 30px;
+        }
+    
+        .container h2 {
+            font-size: 24px;
+        }
+    
+        .container p {
+            font-size: 16px;
+        }
+    
+        #visi-misi {
+            grid-template-columns: 100%;
+            padding: 20px;
+        }
+    
+        .row {
+            grid-template-columns: 100%;
+            padding: 20px;
+            gap: 10px;
+        }
+    
+        .row .facility div {
+            width: 80px;
+            height: 80px;
+        }
+    
+        #message-us {
+            grid-template-columns: 100%;
+            padding: 20px;
+        }
+    
+        #input div {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5px 0;
+        }
+    
+        #nama, #tanggalLahir, #pesan {
+            width: 100%;
+            margin-left: 0;
+        }
+    
+        #input button {
+            width: 100%;
+        }
+    
+        #output {
+            height: 150px;
+            padding: 5px;
+        }
+    }
