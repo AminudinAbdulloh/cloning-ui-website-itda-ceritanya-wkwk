@@ -255,8 +255,13 @@
 
     /* Responsive website */
     @media screen and (max-width: 768px) {
+        .navbar {
+            height: 90px;
+        }
+        
         #logo img {
             margin-left: 0px;
+            padding-top: 15px;
         }
 
         nav ul {
@@ -327,15 +332,16 @@
         }
     
         #banner {
-            height: 40vh;
+            height: 30vh;
         }
 
         .banner-img {
-            height: 40vh;
+            height: 30vh;
         }
 
         .banner-text1 {
             flex-direction: column;
+            margin-top: 25px;
         }
 
         #namaPengunjung {
@@ -347,7 +353,7 @@
 
         .banner-text2 {
             position: absolute;
-            margin-top: 30px;
+            margin-top: 50px;
         }
     
         #banner h1 {
@@ -362,7 +368,7 @@
         .slider-control {
             cursor: pointer;
             position: absolute;
-            top: 40%;
+            top: 30%;
             transform: translateY(-50%);
             font-size: 40px;
             color: white;
